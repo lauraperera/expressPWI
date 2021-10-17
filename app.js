@@ -5,7 +5,9 @@ const express = require("express")
 const app = express()
 
 //utilizando o metodo GET
-app.get("./")
+app.get("/", function(req, res){
+    res.send("Rota principal")
+})
 
 //abrindo servidor
 app.listen(8081, function(req, res){
