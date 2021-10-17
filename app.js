@@ -4,9 +4,14 @@ const express = require("express")
 //criando instancia do express dentro da var app
 const app = express()
 
-//utilizando o metodo GET
+//utilizando o metodo GET para criar a rota principal
 app.get("/", function(req, res){
     res.send("Rota principal")
+})
+
+//criando outras rotas
+app.get("/rotasecundaria", function(req, res){
+    res.send("Rota secundária")
 })
 
 //abrindo servidor
