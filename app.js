@@ -11,10 +11,12 @@ app.get("/", function(req, res){
 
 //criando outras rotas
 app.get("/rotasecundaria", function(req, res){
-    res.send("Rota secundária")
+    res.sendFile(__dirname+"/html/rota_secundaria.html")
+    //res.send("Rota secundária")
 })
 
 //abrindo servidor
 app.listen(8081, function(){
     console.log("Servidor rodando na URL: http://localhost:8081")
+    console.log("Servidor secundário na URL: http://localhost:8081/rotasecundaria")
 })
