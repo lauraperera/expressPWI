@@ -16,5 +16,5 @@ app.get("/rotasecundaria", function(req, res){
 
 //abrindo servidor
 app.listen(8081, function(req, res){
-    console.log("O servidor está rodando...")
+    console.log("Servidor rodando na URL: http://localhost:8081")
 })
