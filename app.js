@@ -6,7 +6,7 @@ const app = express()
 
 //utilizando o metodo GET para criar a rota principal
 app.get("/", function(req, res){
-    res.send("Rota principal")
+    res.sendFile(__dirname+"/html/index.html")
 })
 
 //criando outras rotas
@@ -15,6 +15,6 @@ app.get("/rotasecundaria", function(req, res){
 })
 
 //abrindo servidor
-app.listen(8081, function(req, res){
+app.listen(8081, function(){
     console.log("Servidor rodando na URL: http://localhost:8081")
 })
